@@ -10,7 +10,7 @@ The application follows a microservices-based architecture composed of the follo
 
 - **Authentication Service:** Powered by [Clerk.com](https://clerk.com) with JWT-based authorization.
 - **Video Streaming Service:** Handles video content delivery with efficient buffering and adaptive bitrate.
-- **Storage Service:** Manages media assets using scalable cloud storage (e.g., AWS S3 or GCP Cloud Storage).
+- **Storage Service:** Manages media assets using scalable cloud storage (GCP Cloud Storage).
 - **Controller Service:** Validates requests and coordinates communication between services.
 - **Monitoring & Logging Services:** Real-time event tracking and performance logging using Firebase Firestore.
 
