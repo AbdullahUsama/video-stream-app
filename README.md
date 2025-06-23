@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# 🎥 Video-Stream App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A cloud-native, microservices-based video streaming platform built for scalability, real-time monitoring, and secure access.
 
-## Available Scripts
+## Overview
+The **Video-Stream App** is a cloud-based video streaming application that leverages a modern microservices architecture to ensure efficient media delivery, secure user access, and real-time observability. It’s designed for performance and scalability, capable of handling high traffic with low latency.
 
-In the project directory, you can run:
+## Architecture
+The application follows a microservices-based architecture composed of the following key components:
 
-### `npm start`
+- **Authentication Service:** Powered by [Clerk.com](https://clerk.com) with JWT-based authorization.
+- **Video Streaming Service:** Handles video content delivery with efficient buffering and adaptive bitrate.
+- **Storage Service:** Manages media assets using scalable cloud storage (e.g., AWS S3 or GCP Cloud Storage).
+- **Controller Service:** Validates requests and coordinates communication between services.
+- **Monitoring & Logging Services:** Real-time event tracking and performance logging using Firebase Firestore.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Security
+- Integrated **Clerk.com** for user authentication.
+- Implemented **JWT-based access control** to protect media endpoints and restrict unauthorized access.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Performance
+- **Load Testing:** Achieved a p99 latency of **30.33 ms** under simulated peak traffic conditions using distributed load testing tools.
+- **Monitoring:** Real-time logging and metrics captured in Firebase Firestore for analytics and alerting.
 
-### `npm test`
+## Tech Stack
+- **Backend:** Node.js / Express / NEXT.js
+- **Authentication:** Clerk.com, JWT
+- **Database & Storage:** Firebase Firestore, Cloud Storage
+- **Cloud & Deployment:** Docker, Google Cloud Platform (GCP)
+- **Monitoring:** Firebase Firestore
+- **Testing:** Postman
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js
+- Docker (optional for containerized deployment)
+- Firebase account
+- Clerk.com account
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
